@@ -65,15 +65,15 @@ WSGI_APPLICATION = 'done_backend_job_recruitment.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
 
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        # 'NAME': '',
-        # 'USER': '',
-        # 'PASSWORD': '',
-        # 'HOST': '',
-        # 'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddgicfscvt29a5',
+        'USER': 'fgfeyzvlupogdc',
+        'PASSWORD': '30d69db773f33e19e02f54d1bc40cac69e6fff9dcdfa0b9cef4cd5003602ee81',
+        'HOST': 'ec2-3-227-195-74.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
