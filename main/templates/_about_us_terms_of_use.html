@@ -1,0 +1,73 @@
+{% load static %}
+
+<a id="terms_of_use"></a>
+
+<!-- Titlebar ================================================== -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h2>Terms of Use</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Others</a></li>
+						<li>Terms of Use</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Page Content ================================================== -->
+<div class="container">
+	<div class="row">
+
+		<div class="col-xl-12">
+
+			<!-- Billing Cycle  -->
+			<div class="billing-cycle-radios margin-bottom-70">
+				<div class="radio billed-monthly-radio">
+					<input id="radio-5" name="radio-payment-type" type="radio" checked="">
+					<label for="radio-5"><span class="radio-label"></span> Billed Monthly</label>
+				</div>
+
+				<div class="radio billed-yearly-radio">
+					<input id="radio-6" name="radio-payment-type" type="radio">
+					<label for="radio-6"><span class="radio-label"></span> Billed Yearly <span class="small-label">Save minimum 20%</span></label>
+				</div>
+			</div>
+
+			<!-- Pricing Plans Container -->
+			<div class="pricing-plans-container">
+                {% for i, j in argument.items %}
+                    <!-- Plan -->
+                    <div class="pricing-plan">
+                        <h3>{{ j.plan }}</h3>
+                        <div class="pricing-plan-label billed-monthly-label"><strong>&#2547;{{ j.bdt.a0 }}</strong>| {{ j.visibility }} Month Visibility</div>
+                        <div class="pricing-plan-label billed-yearly-label"><strong>&#2547;{{ j.bdt.a1 }}</strong>| 01 Year Visibilityy</div>
+                        <div class="pricing-plan-features">
+                            <ul>
+                                <li>{{ j.color.a0|safe }} {{ j.listing }} Listing</li>
+                                <li>{{ j.color.a1|safe }} Highlighted in Search Results</li>
+                                <li>{{ j.color.a2|safe }} Get Featured</li>
+                            </ul>
+                        </div>
+                        <a href="pages_checkout_page" class="button full-width margin-top-20">Buy Now</a>
+                    </div>
+                {% endfor %}
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<div class="margin-top-80"></div>

@@ -1,0 +1,48 @@
+{% load static %}
+
+<!-- Dashboard Sidebar ================================================== -->
+<div class="dashboard-sidebar">
+    <div class="dashboard-sidebar-inner" data-simplebar="">
+        <div class="dashboard-nav-container">
+
+            <!-- Responsive Navigation Trigger -->
+            <a href="#" class="dashboard-responsive-nav-trigger">
+                <span class="hamburger hamburger--collapse">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </span>
+                <span class="trigger-title">Dashboard Navigation</span>
+            </a>
+
+            <!-- Navigation -->
+            <div class="dashboard-nav">
+                <div class="dashboard-nav-inner">
+
+                    <ul data-submenu-title="Organize and Manage">
+                        <li><a href="#"><i class="icon-material-outline-business-center"></i> Jobs</a>
+                            <ul>
+                                <li><a href="employers_manage_jobs">Manage Jobs <span class="nav-tag">3</span></a></li>
+                                <li><a href="employers_manage_candidates">Manage Candidates</a></li>
+                                <li><a href="employers_post_a_job">Post a Job</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="active-submenu"><a href="#"><i class="icon-material-outline-assignment"></i> Tasks</a>
+                            <ul>
+                                <li><a href="employers_manage_tasks">Manage Tasks <span class="nav-tag">2</span></a></li>
+                                <li><a href="employers_manage_bidders">Manage Bidders</a></li>
+                                <li><a href="freelancers_task_proposals">My Active Bids <span class="nav-tag">4</span></a></li>
+                                <li><a href="employers_post_a_task">Post a Task</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- Navigation / End -->
+
+        </div>
+    </div>
+</div>
+<!-- Dashboard Sidebar / End -->

@@ -1,0 +1,442 @@
+﻿{% include "_header.html" %}
+
+{% load static %}
+
+<!-- Page Content ================================================== -->
+<div class="full-page-container with-map">
+
+    <!-- Full Page Map -->
+	<div class="full-page-map-container">
+		<!-- Enable Filters Button -->
+		<div class="filter-button-container">
+			<button class="enable-filters-button">
+				<i class="enable-filters-button-icon"></i>
+				<span class="show-text">Show Filters</span>
+				<span class="hide-text">Hide Filters</span>
+			</button>
+			<div class="filter-button-tooltip">Click to expand sidebar with filters!</div>
+		</div>
+
+		<!-- Map -->
+	    <div id="map" data-map-zoom="12" data-map-scroll="true"></div>
+	</div>
+	<!-- Full Page Map / End -->
+
+    <!-- Full Page Sidebar -->
+	{% include "_sidebar_full_page2.html" %}
+
+	<!-- Full Page Content -->
+	<div class="full-page-content-container" data-simplebar="">
+		<div class="full-page-content-inner">
+
+            <!-- Dashboard Headline -->
+			<div class="dashboard-headline">
+				<h3>Browse Jobs</h3>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Freelancers</a></li>
+						<li>Jobs</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="notify-box margin-top-15">
+				<div class="switch-container">
+					<label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Turn on email alerts for this search</span></label>
+				</div>
+
+				<div class="sort-by">
+					<span>Sort by:</span>
+					<select class="selectpicker hide-tick">
+						<option>Relevance</option>
+						<option>Newest</option>
+						<option>Oldest</option>
+						<option>Random</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="listings-container grid-layout margin-top-35">
+				
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-01.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Hexagon <span class="verified-badge" title="Verified Employer" data-tippy-placement="top"></span></h4>
+							<h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>	
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-05.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Laxo</h4>
+							<h3 class="job-listing-title">Competition Law Officer</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-02.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Coffee</h4>
+							<h3 class="job-listing-title">Barista and Cashier</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+				
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-03.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">King <span class="verified-badge" title="Verified Employer" data-tippy-placement="top"></span></h4>
+							<h3 class="job-listing-title">Restaurant General Manager</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-05.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Skyist</h4>
+							<h3 class="job-listing-title">International Marketing Coordinator</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-05.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Podous</h4>
+							<h3 class="job-listing-title">Construction Labourers</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-04.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Mates</h4>
+							<h3 class="job-listing-title">Administrative Assistant</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-06.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Trideo</h4>
+							<h3 class="job-listing-title">Human Resources Consultant</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+				
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-06.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Trideo</h4>
+							<h3 class="job-listing-title">International Marketing Specialist</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+				
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-02.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Coffee</h4>
+							<h3 class="job-listing-title">Terrain Cafe Barista</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+				
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-05.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Kinte</h4>
+							<h3 class="job-listing-title">Skilled Labourer</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+				<!-- Job Listing -->
+				<a href="single_job_page" class="job-listing">
+
+					<!-- Job Listing Details -->
+					<div class="job-listing-details">
+						<!-- Logo -->
+						<div class="job-listing-company-logo">
+							<img src="{% static 'images/company-logo-05.png' %}" alt="">
+						</div>
+
+						<!-- Details -->
+						<div class="job-listing-description">
+							<h4 class="job-listing-company">Alilia</h4>
+							<h3 class="job-listing-title">Healthcare Claims Advisor</h3>
+						</div>
+					</div>
+
+					<!-- Job Listing Footer -->
+					<div class="job-listing-footer">
+						<span class="bookmark-icon"></span>
+						<ul>
+							<li><i class="icon-material-outline-location-on"></i> San Francisco</li>
+							<li><i class="icon-material-outline-business-center"></i> Full Time</li>
+							<li><i class="icon-material-outline-account-balance-wallet"></i> $35000-$38000</li>
+							<li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
+						</ul>
+					</div>
+				</a>
+
+			</div>
+
+			<!-- Pagination -->
+			<div class="clearfix"></div>
+			<div class="pagination-container margin-top-20 margin-bottom-20">
+				<nav class="pagination">
+					<ul>
+						<li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
+						<li><a href="#" class="ripple-effect">1</a></li>
+						<li><a href="#" class="ripple-effect current-page">2</a></li>
+						<li><a href="#" class="ripple-effect">3</a></li>
+						<li><a href="#" class="ripple-effect">4</a></li>
+						<li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+			<!-- Pagination / End -->
+
+            {% include "_footer2b.html" %}
+
+        </div>
+        <!-- Content-inner / End -->
+    </div>
+    <!-- Content / End -->
+</div>
+<!-- Container / End -->
+
+{% include "_footer2a.html" %}

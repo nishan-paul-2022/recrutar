@@ -1,0 +1,108 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs ================================================== -->
+    <title>Recrutar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS ================================================== -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/colors/blue.css' %}">
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container ================================================== -->
+<header id="header-container" class="fullwidth">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+
+			<!-- Left Side Content -->
+			<div class="left-side">
+
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index"><img src="{% static 'images/logo-header.png' %}" alt=""></a>
+				</div>
+
+				<!-- Main Navigation -->
+				<nav id="navigation">
+					<ul id="responsive">
+
+						<li>
+                            <a href="#">Freelancers</a>
+							<ul class="dropdown-nav">
+								<li><a href="freelancers_browse_jobs">Browse Jobs</a></li>
+								<li><a href="freelancers_browse_tasks">Browse Tasks</a></li>
+								<li><a href="freelancers_search_companies">Search Companies</a></li>
+                                <li><a href="freelancers_job_proposals">Job Proposals</a></li>
+                                <li><a href="freelancers_task_proposals">Task Proposals</a></li>
+							</ul>
+						</li>
+
+						<li>
+                            <a href="#">Employers</a>
+							<ul class="dropdown-nav">
+                                <li><a href="employers_manage_jobs">Manage Jobs</a></li>
+                                <li><a href="employers_manage_tasks">Manage Tasks</a></li>
+                                <li><a href="employers_search_freelancers">Search Freelancers</a></li>
+                                <li><a href="employers_post_a_job">Post a Job</a></li>
+                                <li><a href="employers_post_a_task">Post a Task</a></li>
+							</ul>
+						</li>
+
+						<li>
+                            <a href="#">Dashboard</a>
+							<ul class="dropdown-nav">
+								<li><a href="dashboard_user_record">User Record</a></li>
+								<li><a href="dashboard_messages">Messages</a></li>
+								<li><a href="dashboard_bookmarks">Bookmarks</a></li>
+								<li><a href="dashboard_reviews">Reviews</a></li>
+							</ul>
+						</li>
+
+                        <li>
+                            <a href="blog_segment">Blog</a>
+							<ul class="dropdown-nav"></ul>
+						</li>
+
+						<li>
+                            <a href="#">About Us</a>
+							<ul class="dropdown-nav">
+                                <li><a href="about_us#contact">Contact</a></li>
+                                <li><a href="about_us#privacy_policies">Privacy Policies</a></li>
+                                <li><a href="about_us#terms_of_use"> Terms of Use</a></li>
+                            </ul>
+						</li>
+
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+				<!-- Main Navigation / End -->
+
+			</div>
+			<!-- Left Side Content / End -->
+
+            {% if 'username' not in request.session %}  {% include '_logout.html' %}
+{#            {% if request.GET.tag == 'logout' %} {% include '_logout.html' %}#}
+            {% else %} {% include '_login.html' %}
+            {% endif %}
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+
+<div class="clearfix"></div>
+<!-- Header Container / End -->
