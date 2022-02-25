@@ -156,7 +156,7 @@ def view_single_task_page(request):
 def views_dashboard_settings(request):
 	data = models.Models_nationality.objects.all()
 	context = {'nationalityall': data}
-	return render(request, 'account-settings.html', context)
+	return render(request, 'account_settings.html', context)
 
 
 def view_dashboard_user_record(request):
