@@ -93,9 +93,8 @@
 			</div>
 			<!-- Left Side Content / End -->
 
-            {% if 'username' not in request.session %}  {% include '_logout.html' %}
-{#            {% if request.GET.tag == 'logout' %} {% include '_logout.html' %}#}
-            {% else %} {% include '_login.html' %}
+{#            {% include '_logout.html' %}#}
+            {% include '_login.html' %}
             {% endif %}
 
 		</div>
