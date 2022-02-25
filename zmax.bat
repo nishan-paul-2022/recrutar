@@ -1,6 +1,4 @@
 git pull
 git add .
 git commit -m "1st commit"
-git push origin main
-nishan-paul-2022
-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
+git push https://nishan-paul-2022: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@github.com/nishan-paul-2022/recrutar.git --all
