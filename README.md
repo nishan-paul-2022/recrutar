@@ -1,3 +1,1 @@
 # recrutar
-
-## Job recruitment platform
