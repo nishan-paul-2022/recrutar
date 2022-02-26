@@ -68,14 +68,12 @@ if __name__ == '__main__':
 		def function(link, cmd):
 			webbrowser.open(link)
 			print(path)
-			subprocess.Popen(f'start cmd /K && E: && cd E:/CODE/PYTHON/done_backend_job_recruitment && '
+			os.system(f'start cmd /K && E: && cd E:/CODE/PYTHON/done_backend_job_recruitment && '
 			                 f'git pull && '
 			                 f'git add . && '
 			                 f'git commit -m "1st commit" && '
 			                 f'git push https://nishan-paul-2022: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@github.com/nishan-paul-2022/recrutar.git --all &&'
-			                 f'{cmd}',
-			                 shell=True,
-			                 stdout=subprocess.PIPE)
+			                 f'{cmd}')
 
 			subprocess.Popen(['start', 'cmd', '/k', cmd], shell=True)
 
